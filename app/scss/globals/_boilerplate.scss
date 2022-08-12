@@ -1,0 +1,26 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'League Spartan', sans-serif;
+  background-color: white;
+  background-image: url('/assets/images/bg-pattern-top-mobile.svg'), url('/assets/images/bg-pattern-bottom-mobile.svg');
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  color: hsl(300, 43%, 22%);
+  display: flex;
+  justify-content: center;
+}
+
+img{
+  display: block;
+}
+

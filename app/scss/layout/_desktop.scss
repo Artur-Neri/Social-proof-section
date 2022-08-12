@@ -1,0 +1,133 @@
+@media screen and (min-width: 1440px){
+  @keyframes fadeIn{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+  @keyframes brilho {
+    0%{
+      filter: brightness(70%);
+    }
+    50%{
+      filter: brightness(120%)
+    }
+    100%{
+      filter: brightness(70%);
+    }
+  }
+  
+  body{
+    margin: 0 auto;
+    background-image: url('../../../assets/backup/bg-pattern-top-desktop.svg'), url('../../../assets/backup/bg-pattern-bottom-desktop.svg');
+    background-position: top left, bottom right;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    max-width: 1120px;
+    margin: 117px 165px;
+  }
+
+
+  .desktop-upper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    .left-side {
+      max-width: 410px;
+      text-align: left;
+
+      h1 {
+        font-size: 50px;
+      }
+    }
+
+    .reviews {
+
+        .stars {
+
+          padding: 0;
+          padding-right: 30px;
+          
+          .icon{
+            filter: brightness(70%);
+            animation: brilho 5s infinite alternate;
+          }
+
+        }
+        .review:nth-child(1){
+          margin-right: 92px;
+          margin-left: -92px;
+          animation-name: fadeIn;
+          animation-delay: 100ms;
+          animation-duration: 1s;
+          animation-iteration-count: 1;
+          animation-timing-function: ease;
+          
+        }
+        .review:nth-child(2){
+          margin-right: 48px;
+          margin-left: -48px;
+          animation-name: fadeIn;
+          animation-delay: 400ms;
+          animation-duration: 1s;
+          animation-iteration-count: 1;
+          animation-timing-function: ease;
+        }
+        .review:nth-child(3){
+          animation-name: fadeIn;
+          animation-delay: 800ms;
+          animation-duration: 1s;
+          animation-iteration-count: 1;
+          animation-timing-function: ease;
+        }
+
+      }
+      
+    }
+    .review {
+      display: flex;
+      align-items: center;
+      padding: 18px 32px;
+      max-width: 442px;
+  }
+
+  // animation
+
+  
+
+  .testimonials {
+    display: flex;
+    
+
+    .testimonial {
+      max-width: 350px;
+      margin: 0;
+
+    }
+
+    .testimonial:nth-child(2){
+      margin-top: 16px;
+      margin-bottom: -16px;
+    }
+
+    .testimonial:nth-child(3){
+      margin-top: 32px;
+      margin-bottom: -32px;
+    }
+    
+    article:not(:last-of-type){
+      margin-right: 30px;
+    }
+  }
+
+}
