@@ -38,6 +38,45 @@ p {
   word-spacing: -1px;
 }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes brilho {
+  0% {
+    filter: brightness(70%);
+  }
+  50% {
+    filter: brightness(120%);
+  }
+  100% {
+    filter: brightness(70%);
+  }
+}
+@keyframes brilho {
+  0% {
+    filter: brightness(70%);
+  }
+  50% {
+    filter: brightness(120%);
+  }
+  100% {
+    filter: brightness(70%);
+  }
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -52,6 +91,42 @@ p {
 }
 .container .reviews {
   margin-bottom: 3rem;
+}
+.container .reviews .review:nth-child(1) {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+.container .reviews .review:nth-child(2) {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+.container .reviews .review:nth-child(3) {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 .container .review {
   font-weight: 700;
@@ -69,6 +144,11 @@ p {
 }
 .container .review .stars img:not(:last-of-type) {
   margin-right: 8px;
+}
+.container .review .stars .icon {
+  filter: brightness(70%);
+  -webkit-animation: brilho 4s infinite alternate;
+          animation: brilho 4s infinite alternate;
 }
 .container .testimonials {
   text-align: left;
@@ -163,7 +243,7 @@ p {
     align-items: center;
   }
   .container {
-    max-width: 1120px;
+    max-width: 1200px;
     margin: 117px 165px;
   }
   .desktop-upper {
