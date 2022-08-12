@@ -1,4 +1,4 @@
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1200px){
   @keyframes fadeIn{
     0%{
       opacity: 0;
@@ -25,14 +25,13 @@
     background-image: url('../../../assets/backup/bg-pattern-top-desktop.svg'), url('../../../assets/backup/bg-pattern-bottom-desktop.svg');
     background-position: top left, bottom right;
     height: 100vh;
-    
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .container {
-    max-width: 1120px;
+    max-width: 1200px;
     margin: 117px 165px;
   }
 
